@@ -1,0 +1,10 @@
+{
+  "name": "eslint-plugin-vihu",
+  "description": "Custom ESLint rules for my project",
+  "main": "index.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.34.0"
+  }
+}
