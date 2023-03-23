@@ -1,5 +1,5 @@
 {
-  "name": "eslint-vihu-final",
+  "name": "@sigmarsigurds/eslint-plugin-vihu-final-sigmar-eslint-rule",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
