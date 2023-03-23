@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-vihu",
+  "name": "eslint-final-vihu",
   "description": "Custom ESLint rules for my project",
   "main": "index.js",
   "author": "Your Name",
