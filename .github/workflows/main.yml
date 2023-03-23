@@ -1,7 +1,6 @@
 name: main
 
 on: push
-
 jobs:  
   publish-gpr:
     #needs: test
