@@ -1,0 +1,28 @@
+name: main
+
+on: push
+
+jobs:  
+  publish-gpr:
+    #needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+     
+      #- name: "Automated Version Bump"
+      #  uses: "phips28/gh-action-bump-version@master"
+      #  env:
+      #    MEGA_TOKEN: ${{ secrets.MEGA_TOKEN}}
+      #  with:
+      #    version-type: "minor"
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
